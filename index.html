@@ -17,11 +17,12 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--primary-blue);
+            /* border: 3px solid var(--primary-blue); */
+            border: 5px solid lightgray;
         }
 
         .section {
-            padding: 80px 0;
+            padding: 70px 0;
         }
 
         .bg-blue {
@@ -42,18 +43,21 @@
         .nav-link {
             color: var(--primary-blue) !important;
         }
-
+        .nav-link:hover {
+            color: black !important;
+        }
         .skill-badge {
             background-color: var(--primary-blue);
             color: white;
+            padding: 8px;
         }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#" style="color: var(--primary-blue);">Salman Shah</a>
+            <a class="navbar-brand fw-bold" href="#" style="color: var(--primary-blue);">Personal Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,21 +74,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="section bg-primary bg-opacity-75">
+    <!-- bg-secondary-subtle -->
+    <section id="hero" class="section bg-light">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center mt-5">
                     <img src="Salman Picture 1.jpg" alt="Salman Shah" class="profile-img">
                 </div>
-                <div class="col-md-8 text-white">
-                    <h1 class="display-4">Salman Shah</h1>
-                    <p class="lead">AI Enthusiast | MERN Stack Developer</p>
+                <div class="col-md-8 text-dark bold mt-5">
+                    <h1 class="display-3 fw-normal text-primary">Salman Shah</h1>
+                    <p class="lead">Seeking AI | MERN Stack Developer</p>
                     <div class="mt-4">
-                        <a href="https://github.com/M-SALMANSHAH-BARKI" target="_blank" class="btn btn-light btn-lg">
+                        <a href="https://github.com/M-SALMANSHAH-BARKI" target="_blank" class="btn btn-primary btn-lg">
                             <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="AI Intern Resume.pdf" download class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-download"></i> Download CV
+                        <a href="AI Intern Resume.pdf" download class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-file-download"></i> Download CV
                         </a>
                     </div>
                 </div>
@@ -96,7 +101,7 @@
     <section id="about" class="section">
         <div class="container">
             <h2 class="text-primary mb-4">About Me</h2>
-            <p class="lead">Final year Computer Science student with 3.6 CGPA from Gomal University. Passionate web developer with experience in AI projects like text summarization. Skilled in MERN stack development and agile methodologies.</p>
+            <p class="lead">Final year Computer Science student with 3.6 CGPA from <span class="badge bg-primary-subtle text-primary ">Gomal University</span>. Passionate web developer with experience in AI projects like text summarization. Skilled in MERN stack development and agile methodologies.</p>
         </div>
     </section>
 
@@ -130,11 +135,11 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h5>Web Development Intern</h5>
-                    <h6 class="text-primary">CodeAlpha (3 Months)</h6>
+                    <h6 class="text-primary">CodeAlpha 3 Months</h6>
                     <ul>
-                        <li>Developed dynamic web apps using MERN stack</li>
-                        <li>Implemented responsive designs and optimized databases</li>
-                        <li>Participated in agile development workflows</li>
+                        <li>Developed dynamic web applications using HTML, CSS, JavaScript, and ReactJS for improved user experience and responsive design.</li>
+                        <li>Integrating back-end APIs using NodeJS and ExpressJS , ensuring efficient data exchange between the front-end and databases.</li>
+                        <li>Collaborated on database management with MongoDB , focusing on data retrieval and optimization for better application performance.</li>
                     </ul>
                 </div>
             </div>
@@ -144,11 +149,11 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h5>Backend Development Intern</h5>
-                    <h6 class="text-primary">CodeAlpha (1 Month)</h6>
+                    <h6 class="text-primary">CodeAlpha 1 Month</h6>
                     <ul>
-                        <li>Developed dynamic web apps using MERN stack</li>
-                        <li>Implemented responsive designs and optimized databases</li>
-                        <li>Participated in agile development workflows</li>
+                        <li>Developed and maintained back-end systems using the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS).</li>
+                        <li>Designed and optimized databases for scalable, efficient data storage and retrieval.</li>
+                        <li>Solved complex back-end issues in dynamic environments.</li>
                     </ul>
                 </div>
             </div>
@@ -163,12 +168,30 @@
         <div class="container">
             <h2 class="text-primary mb-4">Projects</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">iCoder Platform</h5>
+                            <h5 class="card-title">iCoder - Training Ground for Programmers</h5>
                             <p class="card-text">Bootstrap-based programming practice platform</p>
-                            <a href="https://m-salmanshah-barki.github.io/iCoderBootstrapProject/" class="btn btn-primary">View Project</a>
+                            <a href="https://m-salmanshah-barki.github.io/iCoderBootstrapProject/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheffood - Food Delivery Service</h5>
+                            <p class="card-text">Food delivery responsive plateform</p>
+                            <a href="https://m-salmanshah-barki.github.io/cheffood-food-delivery-website/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Noor Fitness Center - GYM</h5>
+                            <p class="card-text">Developed a static website showcasing gym services and facilities. Optimized for desktop viewing.</p>
+                            <a href="https://m-salmanshah-barki.github.io/NoorFitnessCenter/" target="_blank" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
